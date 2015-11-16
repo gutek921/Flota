@@ -1,0 +1,65 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <h2 class="title"></h2>
+
+        <img src="img/logo.jpg" alt="logo" id="logo" width="100%" align="center">
+        <ul id="mainmenu">
+
+            <li><a href="index.html">Strona główna</a></li>
+
+            <li><a href="1.html">Menu</a>
+                <ul>
+                    <li><a href="2.html">Logowanie</a></li>
+                    <li><a href="3.html">Pojazdy</a><i class="arrow"></i>
+                        <ul>
+                            <li><a href="4.html">Dodaj pojazd</a></li>
+                            <li><a href="5.html">Zarządzaj pojazdami</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+
+               
+                        <h1>Logowanie</h1>
+						<?php session_start();
+          require_once('nazwa bazy.php');
+    ?>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <body>
+      <form name="form-logowanie" action="index.php" method="post">
+          Login: <input type="text" name="login"><br>
+          Hasło: <input type="password" name="password">
+          <input type="submit" name="zaloguj" value="Zaloguj">
+      </form>
+                        
+                   <p>
+				   
+				
+</p>
+</article>
+            </div>
+        </div>
+
+        <div class="footer-container">
+             <footer class="wrapper">
+                <h3>©2015-2016 CDV</h3>
+				
+            </footer>
+    </body>
+</html>
